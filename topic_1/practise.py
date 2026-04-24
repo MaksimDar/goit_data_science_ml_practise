@@ -1,11 +1,20 @@
-from typing import List
+# from typing import List
 
-Data = List[int]
+# Data = List[int]
 
-def mul_data(data: Data) -> int:
-    result = 1
-    for num in data:
-        result = result * num
-    return result
+# def mul_data(data: Data) -> int:
+#     result = 1
+#     for num in data:
+#         result = result * num
+#     return result
 
-print(mul_data([1,2,3,4.2]))
+# print(mul_data([1,2,3,4.2]))
+
+from typing import Union
+
+Number = Union[float, int]
+
+def add(x: Number, y: Number) -> Number:
+    return x + y
+
+print(add('Number','.3'))
